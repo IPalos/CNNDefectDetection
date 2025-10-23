@@ -1,0 +1,22 @@
+DIRECTOR AND ORDER AT BOUNDARIES *********
+2D Nematic
+u_xl(1)   u_xl(2)   u_xl(3)
+0.0d0     1.0d0     0.0d0
+u_xu(1)   u_xu(2)   u_xu(3)
+0.0d0     1.0d0     0.0d0
+u_yl(1)   u_yl(2)   u_yl(3)
+1.0d0     0.0d0     0.0d0
+u_yu(1)   u_yu(2)   u_yu(3)
+1.0d0     0.0d0     0.0d0
+3D Nematic
+director_boundary_down
+0.0d0           0.0d0         1.0d0
+director_boundary_up
+0.0d0           0.0d0         1.0d0
+S_boundary_down
+1.0d0
+S_boundary_up
+1.0d0
+INITIAL GLOBAL DIRECTOR ORIENTATION ******
+ini_ori_axis_z    ini_ori_axis_x
+.true.            .false.

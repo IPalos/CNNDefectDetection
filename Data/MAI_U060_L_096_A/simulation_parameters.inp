@@ -1,0 +1,69 @@
+INPUT DATA FOR SIMULATION OF HYBRID SRD-MD
+PARAMETERS FOR SRD FLUID ****************
+bidim_nem      confined       init_adhoc
+.true.         .true.         .false.
+Npc_init
+   20
+Nslt,	       Nps_init
+  0            0  
+mass1,         Temp           alpha(grads)
+1.0d0          1.0d0          160.0
+density_slt    sigma2         eps_12      eps_22    dt_md
+10.0d0         4.0d0          2.5d0       1.0d0     0.01d0
+nc_x           nc_y           nc_z
+ 96             96            1 
+dt             cell_length
+0.1d0          1.0d0
+n_equil,       n_steps        n_backup 
+3000000        0              100000
+NEMATIC PARAMETERS **********************
+U_nematic      U_surf
+ 6.0d0         0.5d0
+ini_cond_nem   ini_cond_iso    hard_anchor   hard_anchor_wall
+.false.         .true.         .true.        .true.
+chi_HI         lambda_tum      gamma_r 
+0.5d0          1.5d0           0.01d0          
+AUXILIAR PARAMETERS *********************
+new_init       rnd_init        rinit_sep
+.true.         .false.          1.2
+rand_seed
+0.34174205     
+PARAMETERS FOR CALCULATION OF C-FUNCTIONS
+wave_vector_components
+0.3141592654   0.0            0.3141592654
+cf_length
+2000
+omega_min      omega_max
+-2.0           2.0
+n_omega
+5000 
+NONEQUILIBRIUM PARAMETERS ****************
+dot_gamma       shear          poiseuille
+0.0d0           .false.         .false.
+AUXILIARY VARIABLES FOR MOVIES ***********
+n_movie_therm  n_movie_mpcd   np_movie    centered_view    jmolmovies
+   2000        10             2000        .false.          100 
+EXTERNAL FORCES ON COLLOIDS **************
+g(1)           g(2)           g(3)
+0.0d0          0.0d0          0.0d0
+F_ext_sltx     F_ext_slt_y    F_ext_sltz
+0.0d0          0.0d0          0.0d0   
+global_momentum_conservation  global_ori_adjust  gewdir(1)   gewdir(2)   gedir(3) 
+.false.                       .false.             0.0d0       0.0d0       1.0d0
+SEPARATION BETWEEN ELASTIC AND VISCOUS EFF
+n_sep
+1
+PARAMETERS FOR HARMONIC TRAPS ************
+apply_harm_trap k_trap
+.false.         0.0d0
+x_trap          y_trap         z_trap
+0.0d0           0.0d0          0.0d0
+INITIAL TIME AND INTERVAL FOR MEASUREMETS**
+n_min_measure   dn_measure
+0               500
+SHENDRUK ACTIVITY PARAMETERS
+apply_shendruk_activity  shendruk_activity_magn  shendruk_act_type
+.false.                   0.0                    0
+MEAN-FIELD POTENTIAL VARIABLES
+msp_potential   iko_potential   mgc_potential
+.true.         .false.          .false.         

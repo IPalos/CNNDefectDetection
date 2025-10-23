@@ -1,0 +1,30 @@
+Parametros esferocilindro
+sim_spherocyl           rot_dyn           anchor_spherocyl
+.false.                  .true.            .true.
+longitud
+10.0d0
+Inclinacion del esferocilindro
+theta			phi
+ 90.0			 0.0
+n_epot
+4
+sigma_epot
+6.0d0
+epsi_epot
+10.0
+Optical torque
+apply_harm_torq         k_torque
+.false.                 0.0d0
+Magnetic torque
+apply_magn_torq         magnetic_moment     magnetic_freq
+.false.                  1.0d0               0.6283185307
+Magnetic field
+0.0d0                   0.0d0               20.0d0
+Anchoring conditions on colloids
+homeot_ac               planar_ac           pladeg_ac               janus_ac   
+.false.                  .false.             .false.                 .true.
+janus_ratio             transition_height
+0.5                     12.0
+Active force parameters
+apply_active_force      F_active         t_active
+.false.                  0.0             0.0

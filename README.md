@@ -222,7 +222,7 @@ If you use this code in your research, please cite:
 ## 📞 Contact
 
 For questions or collaboration, please contact:
-- [Your contact information]
+- email: ignaciopalos.r@gmail.com
 
 ## 📋 License
 
